@@ -13,6 +13,7 @@ The To-Do List App is a simple, user-friendly web application for managing daily
 
 ## Features
 - Add and display tasks.
+- Add due dates
 - Mark tasks as completed.
 - Delete tasks.
 - Tasks persist across sessions using local storage.
