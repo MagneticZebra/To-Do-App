@@ -14,8 +14,11 @@
                 <input type="text" id ="input-box" placeholder="Add your task">
                 <button onclick="addTask()">Add</button>
             </div>
-            <ul id = "list-container">
-            </ul>
+            <div class="row2">
+                <input type="date" id="dueDateInput" style="display: none;">
+                <button class="dueDate" onclick="showDueDateInput()">Due Date (optional)</button>
+            </div>
+            <ul id = "list-container"></ul>
         </div>
     </div>
     <script src="script.js"></script>

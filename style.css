@@ -43,6 +43,10 @@
     margin-bottom: 25px;
 }
 
+.row2 {
+    text-align: center;
+}
+
 input {
     flex: 1;
     border: none;
@@ -62,6 +66,16 @@ button {
     cursor: pointer;
     border-radius: 40px;
 }
+
+button.dueDate { 
+    background: #002765;
+    padding: 10px 40px;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
 
 ul li {
     list-style: none;
@@ -92,6 +106,12 @@ ul li.checked {
 
 ul li.checked::before {
     background-image: url(img/checked.png);
+}
+
+.dueDateDisplay {
+    position: relative;
+    font-size: medium;
+    margin-left: 25%;
 }
 
 ul li span {
