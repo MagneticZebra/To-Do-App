@@ -2,6 +2,75 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const dueDateValue = document.getElementById("dueDateInput");
 
+let isRunning = false;
+let timerInterval;
+const timerDisplay = document.getElementById('timer');
+let time = 25; // amount of minutes
+let timeRemaining = time * 60; // minutes in seconds
+
+function updateDisplay() {
+    let minutes = Math.floor(timeRemaining / 60);
+    let seconds = timeRemaining % 60;
+    timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+function startTimer() {
+    if (!isRunning) {
+        isRunning = true;
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("Time's up!");
+                resetTimer();
+            }
+        }, 1000); // 1000 means 1 second
+    }
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+    isRunning = false;
+}
+
+function resetTimer() {
+    stopTimer();
+    timeRemaining = time * 60;
+    updateDisplay();
+}
+
+function increaseTime() {
+    time = time + 5;
+
+    if(time >= 90) {
+        time = 90;
+    }
+
+    timeRemaining = time * 60;
+    updateDisplay();
+}
+
+function decreaseTime() {
+    time = time - 5;
+
+    if(time <= 5) {
+        time = 5;
+    }
+
+    timeRemaining = time * 60;
+    updateDisplay();
+}
+
+document.getElementById('start').addEventListener('click', startTimer);
+document.getElementById('stop').addEventListener('click', stopTimer);
+document.getElementById('reset').addEventListener('click', resetTimer);
+document.getElementById('increase').addEventListener('click', increaseTime);
+document.getElementById('decrease').addEventListener('click', decreaseTime);
+
+updateDisplay();
+
+
 // doesn't allow users to select a due date in the past
 function setMinDate() {
   const today = new Date();

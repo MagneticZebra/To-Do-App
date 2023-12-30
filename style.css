@@ -12,6 +12,32 @@
     padding: 10px;
 }
 
+.pomodoro {
+    text-align: center;
+    padding: 30px 30px;
+    background: #ADD8E6;
+    margin: 25px auto 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.timeRemaining {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.bat button {
+    margin: 10px;
+    padding: 15px;
+}
+
 .todo-app {
     width: 100%;
     max-width: 540px;
