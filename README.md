@@ -1,7 +1,7 @@
 # To-Do List App
 
 ## Overview
-The To-Do List App is a simple, user-friendly web application for managing daily tasks. It allows users to add, mark, and delete tasks efficiently, using HTML, CSS, and JavaScript. It also includes a pomodoro timer.
+The To-Do List App is a simple, user-friendly web application for managing daily tasks. It allows users to add, mark, add due dates, and delete tasks efficiently, using HTML, CSS, and JavaScript. It also includes a pomodoro timer.
 
 ## Requirements
 - Any modern web browser.
