@@ -12,6 +12,7 @@ The To-Do List App is a simple, user-friendly web application for managing daily
 - Add tasks and manage your to-do list.
 
 ## Features
+- Pomodoro timer
 - Add and display tasks.
 - Add due dates
 - Mark tasks as completed.
