@@ -1,4 +1,5 @@
 # To-Do List App
+![image](https://github.com/MagneticZebra/To-Do-App/assets/87204308/4e9f0cad-e064-4ede-8c14-ec89db90329e)
 
 ## Overview
 The To-Do List App is a simple, user-friendly web application for managing daily tasks. It allows users to add, mark, add due dates, and delete tasks efficiently, using HTML, CSS, and JavaScript. It also includes a pomodoro timer.
